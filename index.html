@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Andi & Budi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #4a4a4a;
+            background: linear-gradient(135deg, #f6d5f7, #fbe9d7, #f0f4fd);
+            background-attachment: fixed;
+        }
+
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent),
+                radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent);
+            background-size: 20em 20em;
+            background-color: transparent;
+            opacity: 0.5;
+            z-index: -1;
+            animation: patternMove 60s linear infinite;
+        }
+
+        @keyframes patternMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 20em 20em; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .floral-corner {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23f6d5f7' d='M0,0 C30,10 40,30 50,100 C60,30 90,10 100,0 Z'/%3E%3C/svg%3E");
+            transform: rotate(180deg);
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23fbe9d7' d='M0,0 C30,10 40,30 50,100 C60,30 90,10 100,0 Z'/%3E%3C/svg%3E");
+        }
+
+        h1, .couple-names {
+            font-family: 'Cormorant Garamond', serif;
+            color: #8e6ea6;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-top: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .couple-names {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        .date-venue {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #8e6ea6;
+            color: white;
+            padding: 12px 24px;
+            margin: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .button:hover {
+            background-color: #a67fc0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        @media screen and (max-width: 650px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            .couple-names {
+                font-size: 2.2em;
+            }
+            .floral-corner {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <div class="floral-corner top-left"></div>
+        <div class="floral-corner bottom-right"></div>
+        
+        <h1>Undangan Pernikahan</h1>
+        <p class="couple-names">Steve & Alexa</p>
+        <p>Dengan penuh kebahagiaan, kami mengundang Saudara untuk hadir di hari pernikahan kami</p>
+        <div class="date-venue">
+            <p><strong>Tanggal:</strong> Sabtu, 15 Oktober 2024</p>
+            <p><strong>Waktu:</strong> 10:00 WIB - selesai</p>
+            <p><strong>Tempat:</strong> Gedung Muladi Dome<br>Jl. Sirojudin No. 69, Semarang</p>
+        </div>
+        <p>Kehadiran Saudara akan melengkapi kebahagiaan kami.</p>
+        
+        
+    </div>
+</body>
+</html>
